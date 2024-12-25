@@ -71,78 +71,7 @@ This project is licensed under the MIT License - see the LICENSE file for more d
 
 
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-10EFX - Siber Güvenlik Saldırı Tespiti ve Optimizasyonu
-
-10EFX, gelişmiş teknikler kullanarak siber güvenlik tehditlerini tespit etmek, sınıflandırmak ve model performansını optimize etmek için tasarlanmış bir makine öğrenmesi projesidir. Bu projenin ana amacı, çeşitli siber saldırı türlerini tespit etmek ve hiperparametre optimizasyonu ve ansamble öğrenme yöntemleriyle model performansını geliştirmektir.
-Repo'yu Klonlayın
-
-Bu repoyu klonlamak için aşağıdaki komutu kullanabilirsiniz:
-
-gh repo clone s3loc/A10EFX
-
-Mevcut Durum
-
-Projenin mevcut aşamasında odaklanılan başlıca konular şunlardır:
-
-    Saldırı Tespiti ve Sınıflandırma: Farklı siber saldırı türlerini tespit etmek ve sınıflandırmak için XGBoost, LightGBM, CatBoost gibi makine öğrenmesi sınıflandırıcıları kullanılmaktadır.
-    Veri Ön İşleme ve Özellik Mühendisliği: SMOTE gibi veri artırma, özellik ölçekleme (RobustScaler), ve özellik seçimi (SelectKBest, mutual_info_classif) teknikleri uygulanmaktadır.
-    Hiperparametre Optimizasyonu: Optuna ve RandomSearch gibi araçlar kullanılarak hiperparametre optimizasyonu yapılmakta, bu da model performansını artırmaktadır.
-    Ansamble Öğrenme: Birden fazla sınıflandırıcı birleştirilerek modelin doğruluğu ve güvenilirliği artırılmaktadır.
-    Model Yorumlanabilirliği: SHAP (SHapley Additive exPlanations) kullanılarak modellerin karar verme süreçleri açıklanmakta ve yorumlanmaktadır.
-
-Proje Özeti
-Teknolojiler ve Kütüphaneler:
-
-    Makine Öğrenmesi: XGBoost, LightGBM, CatBoost, Scikit-learn
-    Derin Öğrenme: TensorFlow, Keras (model eğitimi ve GAN tabanlı veri artırma)
-    Veri İşleme: Pandas, NumPy, Scikit-learn (ön işleme, özellik seçimi, ölçekleme)
-    Optimizasyon: Optuna, RandomSearch
-    Ansamble Öğrenme: Voting Classifier (birleşik sınıflandırıcılar)
-    Model Açıklanabilirliği: SHAP
-    Veri Artırma: SMOTE, GAN tabanlı yöntemler
-    Sürüm Kontrolü ve Dağıtım: Git, GitHub
-
-Projede Yapılan Adımlar:
-
-    Veri Toplama ve Ön İşleme: Veri temizlendi, eksik değerler dolduruldu ve çeşitli ön işleme ve özellik mühendisliği teknikleri uygulandı.
-    Modelleme: Birkaç makine öğrenmesi modeli eğitildi ve hiperparametre optimizasyonu ile saldırı tespiti yapıldı.
-    Ansamble Öğrenme: En iyi performansı gösteren modeller bir ansamblede birleştirilerek doğruluk artırıldı.
-    Model Değerlendirmesi: Doğruluk, F1 skoru, ROC-AUC, kesinlik, duyarlılık gibi önemli performans metrikleri değerlendirildi.
-    Model Yorumlanabilirliği: SHAP kullanılarak modelin tahminlerinin şeffaf bir şekilde yorumlanması sağlandı.
-
-Gelecek Yönelimler
-
-Proje, saldırı tespiti ve sınıflandırma alanında iyi bir ilerleme kaydetse de, nihai hedef 10EFX'i Red Team operasyonları ve penetrasyon testleri için kapsamlı bir araç haline getirmektir. Gelecek yönelimleri şunlardır:
-
-    Saldırı Simülasyonu: Pekiştirmeli öğrenme veya düşman eğitimi gibi yöntemler kullanılarak çeşitli saldırı vektörlerini simüle etmek ve yeni taktikler geliştirmek.
-    Exploit Geliştirme: AI'yi otomatik exploit geliştirme ile entegre etmek, gerçek dünyadaki siber saldırıları test etmek ve simüle etmek.
-    Gerçek Zamanlı Saldırı Tespiti: Modelin gerçek zamanlı tespit yapabilme yeteneğini geliştirmek için zaman serisi verileri (örneğin, ağ trafiği) kullanmak.
-    Red Team Araçları Entegrasyonu: Sistemlerdeki güvenlik açıklarını test etmek ve istismar etmek için uçtan uca bir Red Team AI aracı geliştirmek.
-    Etik ve Hukuki Hususlar: Siber güvenlik amaçları için AI kullanımında etik ve hukuki uyumu sağlamak.
-
-Başlangıç
-
-Projeye başlamak için:
-
-    Repo'yu Klonlayın:
-
-gh repo clone s3loc/A10EFX
-cd A10EFX
-
-Bağımlılıkları Yükleyin:
-
-    pip install -r requirements.txt
-
-    Projeyi Çalıştırın: Farklı projeyi çalıştırma adımları için ilgili betiklerde (model eğitimi, saldırı tespiti vb.) spesifik talimatları takip edin.
-
-Katkılar
-
-Katkılarınızı bekliyoruz! Bu repoyu çatallayarak, değişiklik yaparak ve pull request göndererek projeye katkıda bulunabilirsiniz. Yeni özellik önerileri veya sorunlar için bir issue açabilir ya da doğrudan bizimle iletişime geçebilirsiniz.
-Lisans
-
-Bu proje MIT Lisansı altında lisanslanmıştır - daha fazla bilgi için LICENSE dosyasına göz atabilirsiniz.
 
 ![Başlıksız](https://github.com/user-attachments/assets/24ca9e8e-561f-408b-b3de-26842e3d9050)
 
